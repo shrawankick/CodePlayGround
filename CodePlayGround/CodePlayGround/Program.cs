@@ -16,9 +16,9 @@ namespace CodePlayGround
             //StringResverse();
             //CountTheOccurenceOfEachChar("Mississippi");
             //CountTheOccurenceOfEachChar(string.Empty);
-            // VerifythenumberisPrime();
+            //VerifythenumberisPrime();
             //TestingTryCatch();
-           // FindtheNthlargestNumberinArrayUsingBuiltinfun();
+            //FindtheNthlargestNumberinArrayUsingBuiltinfun();
             FindtheNthlargestNumberinArray();
 
             Console.ReadLine();
@@ -30,7 +30,12 @@ namespace CodePlayGround
             int[] myarray = new int[] { 30, 0, 5, 10, 15, 15, 20, 20, 25, 35 };
             PrintArray(myarray);
             int length = myarray.Length;
-            if (n <= myarray.Length)
+            if (n > myarray.Length || n == 0)
+            {
+                Console.WriteLine("there is no Zero highest or the length of array is less-than the Given highest number  ");
+                Console.WriteLine("there is no " + n + " highest");
+            }
+            else
             {
                 for (int i = 0; i < length; i++)
                 {
@@ -45,29 +50,29 @@ namespace CodePlayGround
 
                     }
                 }
-                Console.WriteLine("sorted");
-                PrintArray(myarray);
+               // Console.WriteLine("sorted");
+               // PrintArray(myarray);
 
-                int k = 1; 
+                int k = 1;
                 for (int i = 0; i < length; i++)
                 {
-                   
-                    
-                        if (myarray[i] != myarray[k-1])
-                        {
+                    if (myarray[i] != myarray[k-1])
+                    {
                         myarray[k] = myarray[i];
                         k++;
-                        }
-                    
+                    }
                 }
-                Console.WriteLine("All unique Elements");
-                PrintArray(myarray);
+               // Console.WriteLine("All unique Elements");
+               // PrintArray(myarray);
 
                 Console.WriteLine("The " + n + " largest number in array is " + myarray[myarray.Length - n]);
 
-               
+
             }
+
         }
+
+
 
         private static void PrintArray(int[] testArray)
         {

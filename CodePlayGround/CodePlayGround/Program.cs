@@ -18,10 +18,66 @@ namespace CodePlayGround
             //CountTheOccurenceOfEachChar(string.Empty);
             // VerifythenumberisPrime();
             //TestingTryCatch();
+           // FindtheNthlargestNumberinArrayUsingBuiltinfun();
             FindtheNthlargestNumberinArray();
+
             Console.ReadLine();
         }
+
         private static void FindtheNthlargestNumberinArray()
+        {
+            int n = 5;
+            int[] myarray = new int[] { 30, 0, 5, 10, 15, 15, 20, 20, 25, 35 };
+            PrintArray(myarray);
+            int length = myarray.Length;
+            if (n <= myarray.Length)
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    for (int j = i + 1; j < length; j++)
+                    {
+                        if (myarray[i] > myarray[j])
+                        {
+                            int temp = myarray[i];
+                            myarray[i] = myarray[j];
+                            myarray[j] = temp;
+                        }
+
+                    }
+                }
+                Console.WriteLine("sorted");
+                PrintArray(myarray);
+
+                int k = 1; 
+                for (int i = 0; i < length; i++)
+                {
+                   
+                    
+                        if (myarray[i] != myarray[k-1])
+                        {
+                        myarray[k] = myarray[i];
+                        k++;
+                        }
+                    
+                }
+                Console.WriteLine("All unique Elements");
+                PrintArray(myarray);
+
+                Console.WriteLine("The " + n + " largest number in array is " + myarray[myarray.Length - n]);
+
+               
+            }
+        }
+
+        private static void PrintArray(int[] testArray)
+        {
+            foreach (var item in testArray)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        private static void FindtheNthlargestNumberinArrayUsingBuiltinfun()
         {
             int n = 4;
             int[] myarray = new int[] { 30, 0, 5, 10, 15, 15, 20, 20, 25, 35 };

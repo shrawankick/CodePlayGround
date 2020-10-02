@@ -29,7 +29,7 @@ namespace CodePlayGround
         private static void FindtheNthlargestNumberinArrayUsingStacks()
         {
             int n = 5;
-            int[] myarray = new int[] { 4,5,6,7,1,2,3,4 };
+            int[] myarray = new int[] { 30, 0, 5, 10, 15, 15, 20, 20, 25, 35 };
             PrintArray(myarray);
             int length = myarray.Length;
             if (n > myarray.Length || n == 0)
@@ -40,39 +40,48 @@ namespace CodePlayGround
             else
             {
                 //implement sorting 
-                Stack<int> tmpStack = new Stack<int>();
+                Stack<int> inputStack = new Stack<int>();
                 //Stack<int> tmpStack2 = new Stack<int>();
                 foreach (var item in myarray)
                 {
                    // Console.WriteLine(item);
-                    tmpStack.Push(item);
+                    inputStack.Push(item);
                 }
+                Stack<int> SortedStack = SortStackUsingWhileloop(inputStack);
+                PrintStack(SortedStack);
+                //
+                int[] SortedStackConvertedToarray = SortedStack.ToArray();
 
-                Stack<int> tmpStack1 = sortStackwhile(tmpStack);
+                int k = 1;
+                for (int i = 0; i < length; i++)
+                {
+                    if (SortedStackConvertedToarray[i] != SortedStackConvertedToarray[k - 1])
+                    {
+                        SortedStackConvertedToarray[k] = SortedStackConvertedToarray[i];
+                        k++;
+                    }
+                }
+                // Console.WriteLine("All unique Elements");
 
-               PrintStack(tmpStack1);
-              
+                Console.WriteLine('\n');
+                Console.WriteLine("The " + n + " largest number in array is " + myarray[myarray.Length - n]);
 
             }
+            
+            
 
         }
 
-        private static Stack<int> sortStackwhile(Stack<int> input)
+        private static Stack<int> SortStackUsingWhileloop(Stack<int> input)
         {
             Stack<int> tmpStack = new Stack<int>();
             while (input.Count > 0)
             {
-
-                int tmp = input.Pop();
-
-
+                int tmp = input.Pop();              
                 while (tmpStack.Count > 0 && tmpStack.Peek() > tmp)
-                {
-                    
+                {                   
                     input.Push(tmpStack.Pop());
-                }
-
-                
+                }              
                 tmpStack.Push(tmp);
             }
             return tmpStack;

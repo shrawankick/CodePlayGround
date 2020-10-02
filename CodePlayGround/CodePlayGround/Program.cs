@@ -19,9 +19,99 @@ namespace CodePlayGround
             //VerifythenumberisPrime();
             //TestingTryCatch();
             //FindtheNthlargestNumberinArrayUsingBuiltinfun();
-            FindtheNthlargestNumberinArray();
+           // FindtheNthlargestNumberinArray();
+            FindtheNthlargestNumberinArrayUsingStacks();
+
 
             Console.ReadLine();
+        }
+
+        private static void FindtheNthlargestNumberinArrayUsingStacks()
+        {
+            int n = 5;
+            int[] myarray = new int[] { 4,5,6,7,1,2,3,4 };
+            //PrintArray(myarray);
+            int length = myarray.Length;
+            if (n > myarray.Length || n == 0)
+            {
+                Console.WriteLine("there is no Zero highest or the length of array is less-than the Given highest number  ");
+                Console.WriteLine("there is no " + n + " highest");
+            }
+            else
+            {
+                //implement sorting 
+                Stack<int> tmpStack = new Stack<int>();
+                //Stack<int> tmpStack2 = new Stack<int>();
+                foreach (var item in myarray)
+                {
+                   // Console.WriteLine(item);
+                    tmpStack.Push(item);
+                }
+
+                Stack<int> tmpStac = sortStackwhile(tmpStack);
+
+               // PrintStack(tmpStack);
+              
+
+            }
+
+        }
+
+        private static Stack<int> sortStackwhile(Stack<int> input)
+        {
+            Stack<int> tmpStack = new Stack<int>();
+            while (input.Count > 0)
+            {
+
+                int tmp = input.Pop();
+
+
+                while (tmpStack.Count > 0 && tmpStack.Peek() > tmp)
+                {
+                    
+                    input.Push(tmpStack.Pop());
+                }
+
+                
+                tmpStack.Push(tmp);
+            }
+            return tmpStack;
+        }
+
+        public static void PrintStack(Stack<int> s)
+        {
+            if (s.Count == 0)
+                return;
+
+            int x = s.Peek();
+            s.Pop();
+            PrintStack(s);
+            Console.Write(x + " ");
+            s.Push(x);
+            
+        }
+
+        public static void sortStack(Stack<int> tmpStack)
+        {
+            if (tmpStack.Count > 0)
+            {
+                int x = (int)tmpStack.Peek();
+                tmpStack.Pop();
+
+                sortStack(tmpStack);
+                sortedInsert(tmpStack, x);
+            }
+           // throw new NotImplementedException();
+        }
+
+        public static void sortedInsert(Stack<int> tmpStack, int x)
+        {
+            if (tmpStack.Count == 0 || x > (int)tmpStack.Peek())
+            {
+                tmpStack.Push(x);
+                return;
+            }
+            //throw new NotImplementedException();
         }
 
         private static void FindtheNthlargestNumberinArray()

@@ -19,7 +19,7 @@ namespace CodePlayGround
             //VerifythenumberisPrime();
             //TestingTryCatch();
             //FindtheNthlargestNumberinArrayUsingBuiltinfun();
-           // FindtheNthlargestNumberinArray();
+            // FindtheNthlargestNumberinArray();
             FindtheNthlargestNumberinArrayUsingStacks();
 
 
@@ -40,14 +40,14 @@ namespace CodePlayGround
             else
             {
                 //implement sorting 
-                Stack<int> inputStack = new Stack<int>();
-                //Stack<int> tmpStack2 = new Stack<int>();
+                Stack<int> inputStack = new Stack<int>();                
                 foreach (var item in myarray)
                 {
-                   // Console.WriteLine(item);
+                    // Console.WriteLine(item);
                     inputStack.Push(item);
                 }
                 Stack<int> SortedStack = SortStackUsingWhileloop(inputStack);
+                Console.WriteLine("The Sorted Array: ");
                 PrintStack(SortedStack);
                 //
                 int[] SortedStackConvertedToarray = SortedStack.ToArray();
@@ -67,26 +67,34 @@ namespace CodePlayGround
                 Console.WriteLine("The " + n + " largest number in array is " + myarray[myarray.Length - n]);
 
             }
-            
-            
+
+
 
         }
-
+        /// <summary>
+        /// we are using the Temporary Stack to sort the input array and we return 
+        /// the Stack of sorted array 
+        /// </summary>
+        /// <param name="input">we need to add the Stack</param>
+        /// <returns></returns>
         private static Stack<int> SortStackUsingWhileloop(Stack<int> input)
         {
             Stack<int> tmpStack = new Stack<int>();
             while (input.Count > 0)
             {
-                int tmp = input.Pop();              
+                int tmp = input.Pop();
                 while (tmpStack.Count > 0 && tmpStack.Peek() > tmp)
-                {                   
+                {
                     input.Push(tmpStack.Pop());
-                }              
+                }
                 tmpStack.Push(tmp);
             }
             return tmpStack;
         }
-
+        /// <summary>
+        /// we are Printing the stacks 
+        /// </summary>
+        /// <param name="s"></param>
         public static void PrintStack(Stack<int> s)
         {
             if (s.Count == 0)
@@ -97,7 +105,7 @@ namespace CodePlayGround
             PrintStack(s);
             Console.Write(x + " ");
             s.Push(x);
-            
+
         }
 
         public static void sortStack(Stack<int> tmpStack)
@@ -110,7 +118,7 @@ namespace CodePlayGround
                 sortStack(tmpStack);
                 sortedInsert(tmpStack, x);
             }
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public static void sortedInsert(Stack<int> tmpStack, int x)
@@ -149,20 +157,20 @@ namespace CodePlayGround
 
                     }
                 }
-               // Console.WriteLine("sorted");
-               // PrintArray(myarray);
+                // Console.WriteLine("sorted");
+                // PrintArray(myarray);
 
                 int k = 1;
                 for (int i = 0; i < length; i++)
                 {
-                    if (myarray[i] != myarray[k-1])
+                    if (myarray[i] != myarray[k - 1])
                     {
                         myarray[k] = myarray[i];
                         k++;
                     }
                 }
-               // Console.WriteLine("All unique Elements");
-               // PrintArray(myarray);
+                // Console.WriteLine("All unique Elements");
+                // PrintArray(myarray);
 
                 Console.WriteLine("The " + n + " largest number in array is " + myarray[myarray.Length - n]);
 
@@ -172,13 +180,18 @@ namespace CodePlayGround
         }
 
 
-
+        /// <summary>
+        /// Printing the Array for reference 
+        /// </summary>
+        /// <param name="testArray"></param>
         private static void PrintArray(int[] testArray)
         {
+            Console.WriteLine("The input array: ");
             foreach (var item in testArray)
             {
-                Console.WriteLine(item);
+                Console.Write(item + " ");
             }
+            Console.WriteLine("\n");
         }
 
         private static void FindtheNthlargestNumberinArrayUsingBuiltinfun()

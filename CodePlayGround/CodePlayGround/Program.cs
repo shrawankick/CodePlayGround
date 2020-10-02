@@ -30,7 +30,7 @@ namespace CodePlayGround
         {
             int n = 5;
             int[] myarray = new int[] { 4,5,6,7,1,2,3,4 };
-            //PrintArray(myarray);
+            PrintArray(myarray);
             int length = myarray.Length;
             if (n > myarray.Length || n == 0)
             {
@@ -48,9 +48,9 @@ namespace CodePlayGround
                     tmpStack.Push(item);
                 }
 
-                Stack<int> tmpStac = sortStackwhile(tmpStack);
+                Stack<int> tmpStack1 = sortStackwhile(tmpStack);
 
-               // PrintStack(tmpStack);
+               PrintStack(tmpStack1);
               
 
             }

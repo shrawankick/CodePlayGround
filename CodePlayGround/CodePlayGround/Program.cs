@@ -20,11 +20,15 @@ namespace CodePlayGround
             //TestingTryCatch();
             //FindtheNthlargestNumberinArrayUsingBuiltinfun();
             // FindtheNthlargestNumberinArray();
-            FindtheNthlargestNumberinArrayUsingStacks();
-
+            //FindtheNthlargestNumberinArrayUsingStacks();
+            OperationsOnStack operationsOnStack = new OperationsOnStack();
+            operationsOnStack.OperationsOnStacks();
+           
 
             Console.ReadLine();
         }
+
+       
 
         private static void FindtheNthlargestNumberinArrayUsingStacks()
         {

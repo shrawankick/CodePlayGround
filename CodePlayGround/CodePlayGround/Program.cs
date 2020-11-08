@@ -21,8 +21,11 @@ namespace CodePlayGround
             //FindtheNthlargestNumberinArrayUsingBuiltinfun();
             // FindtheNthlargestNumberinArray();
             //FindtheNthlargestNumberinArrayUsingStacks();
-            OperationsOnStack operationsOnStack = new OperationsOnStack();
-            operationsOnStack.OperationsOnStacks();
+            //OperationsOnStack operationsOnStack = new OperationsOnStack();
+            //operationsOnStack.OperationsOnStacks();
+
+            practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
+            primeNumber.VerifythenumberisPrime();
            
 
             Console.ReadLine();

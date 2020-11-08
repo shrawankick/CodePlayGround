@@ -10,7 +10,7 @@ namespace CodePlayGround.practicePrograms
         public void VerifythenumberisPrime(){
             Console.WriteLine("Enter your number");
             int input = Convert.ToInt32(Console.ReadLine());
-            boolean isPrime = true;
+            bool isPrime = true;
             for (int i = 2; i < input / 2; i++){
                 if (input % i == 0){
                     isPrime = false;

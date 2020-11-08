@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OperationsOnStack.cs" />
+    <Compile Include="practicePrograms\BiggestandSmallestofArray.cs" />
     <Compile Include="practicePrograms\Class1.cs" />
     <Compile Include="practicePrograms\PrimeNumber.cs" />
     <Compile Include="Program.cs" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CodePlayGround.practicePrograms;
 
 namespace CodePlayGround
 {
@@ -24,9 +25,13 @@ namespace CodePlayGround
             //OperationsOnStack operationsOnStack = new OperationsOnStack();
             //operationsOnStack.OperationsOnStacks();
 
-            practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
-            primeNumber.VerifythenumberisPrime();
+            //  practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
+            //  primeNumber.VerifythenumberisPrime();
+
+            LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
+            largestandSmallestofArray.LargestAndSmallestofArray();
            
+
 
             Console.ReadLine();
         }

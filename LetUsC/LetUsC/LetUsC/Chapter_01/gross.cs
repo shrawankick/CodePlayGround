@@ -17,19 +17,15 @@ namespace LetUsC.Chapter_01
         /// formula Net Salary = Gross Salary – Deductions
         /// 40/100 conversion 
         /// </summary>
-        public void FindGrossSalaryofUser()
-        {
+        public void FindGrossSalaryofUser(){
             Console.WriteLine("Enter Basic Salary");
             int BasicSalary = Convert.ToInt32(Console.ReadLine());
             var DA =   0.4 * BasicSalary;
-
             //var HRA = BasicSalary * (40/100);
             var HRA = BasicSalary * 0.2;
-
             var Gross = BasicSalary + DA + HRA;
             Console.WriteLine($"Basic Salary {BasicSalary} and DA {DA} HRA {HRA}");
-            Console.WriteLine($"Gross Salary is {Gross}");
-           
+            Console.WriteLine($"Gross Salary is {Gross}");           
         }
     }
 }

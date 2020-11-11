@@ -45,6 +45,7 @@
     <Compile Include="Chapter_01\Class1.cs" />
     <Compile Include="Chapter_01\DistanceBetweenTwoCitiesInDiffrentFormats.cs" />
     <Compile Include="Chapter_01\gross.cs" />
+    <Compile Include="Chapter_01\marks_obtained_by.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

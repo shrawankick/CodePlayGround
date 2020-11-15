@@ -14,6 +14,8 @@ namespace LetUsC.Chapter_01
         /// Temperature of a city in Fahrenheit degrees is input through the keyboard.
         /// Write a program to convert this temperature into Centigrade degrees.
         /// formula (32°F − 32) × 5/9 = 0°C
+        /// (10°F − 32) × 5/9 = -12.22°C
+
         /// </summary>
         public void ConvertTempature()
         {

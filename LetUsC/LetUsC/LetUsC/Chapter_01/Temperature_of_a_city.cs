@@ -24,7 +24,7 @@ namespace LetUsC.Chapter_01
             try
             {
                  inputTempature = Convert.ToInt32(Console.ReadLine());
-                var temperatureInC = (inputTempature - 32) * (5 / 9); //need help 
+                var temperatureInC = inputTempature - 32 * 5 / 9; //need help 
                 Console.WriteLine($"temperature into Centigrade degrees is {temperatureInC} ");
             }
             catch (Exception eX)

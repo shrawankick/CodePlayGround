@@ -21,8 +21,7 @@ namespace LetUsC.Chapter_01
         /// A=πr2
         /// C=2πr
         /// </summary>
-        public void RectangleOrCircle()
-        {
+        public void RectangleOrCircle() {
             Console.WriteLine("length of rectangle");
             var LengthOfRectangle = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("breadth of rectangle");

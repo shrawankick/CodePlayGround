@@ -48,6 +48,7 @@
     <Compile Include="Chapter_01\InterchangeTheContents.cs" />
     <Compile Include="Chapter_01\marks_obtained_by.cs" />
     <Compile Include="Chapter_01\Rectangle_Circle.cs" />
+    <Compile Include="Chapter_01\SumOfFiveDigitNumber.cs" />
     <Compile Include="Chapter_01\Temperature_of_a_city.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -18,11 +18,7 @@ namespace LetUsC.Chapter_01
             Console.WriteLine("enter Five Digit number");
             int InputNumber = Convert.ToInt32(Console.ReadLine());
             int refinput = InputNumber;
-            if (InputNumber >= 99999)
-            {
-                Console.WriteLine("Enter Valid number in five digits ");
-            }
-            else
+            if (InputNumber <= 100000)
             {
 
                 int sum = 0;
@@ -32,7 +28,11 @@ namespace LetUsC.Chapter_01
                     InputNumber = InputNumber / 10;
                 }
 
-                Console.WriteLine($"Sum of the digits {refinput} is {sum}");
+                Console.WriteLine($"Sum of the digits of {refinput} is {sum}");
+            }
+            else
+            {
+                Console.WriteLine("Enter Valid number in five digits ");
             }
         }
     }

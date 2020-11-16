@@ -20,22 +20,22 @@ namespace LetUsC.Chapter_01
         public void ConvertTempature()
         {
             Console.WriteLine("enter Temperature of a city in Fahrenheit degrees");
-            var inputTempature =0;
+            var inputTempature = 0;
             try
             {
-                 inputTempature = Convert.ToInt32(Console.ReadLine());
-                var temperatureInC = inputTempature - 32 * 5 / 9; //need help 
+                inputTempature = Convert.ToInt32(Console.ReadLine());
+                var temperatureInC = ((inputTempature - 32) * 5) / 9;
                 Console.WriteLine($"temperature into Centigrade degrees is {temperatureInC} ");
             }
             catch (Exception eX)
             {
                 Console.WriteLine(eX.Message);
-                
-            }        
-                
-           
 
-           
+            }
+
+
+
+
         }
     }
 }

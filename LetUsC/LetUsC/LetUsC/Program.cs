@@ -44,8 +44,9 @@ namespace LetUsC
             //interchangeTheContents.InterchangeTheContentsOfTwoNumbers();
 
 
-            Chapter_01.SumOfFiveDigitNumber sumOfFiveDigitNumber = new SumOfFiveDigitNumber();
-            sumOfFiveDigitNumber.Sumoffivedigits();
+            SumOfFiveDigitNumber ExtensionMethode = new SumOfFiveDigitNumber();
+           // sumOfFiveDigitNumber.Sumoffivedigits();
+            ExtensionMethode.Test();
         }
 
         private static void lines()

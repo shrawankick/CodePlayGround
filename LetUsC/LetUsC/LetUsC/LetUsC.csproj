@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Chapter_01\Class1.cs" />
     <Compile Include="Chapter_01\DistanceBetweenTwoCitiesInDiffrentFormats.cs" />
+    <Compile Include="Chapter_01\FiveDigitsReverse.cs" />
     <Compile Include="Chapter_01\gross.cs" />
     <Compile Include="Chapter_01\InterchangeTheContents.cs" />
     <Compile Include="Chapter_01\marks_obtained_by.cs" />

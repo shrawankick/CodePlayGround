@@ -45,8 +45,9 @@ namespace LetUsC
 
 
             SumOfFiveDigitNumber ExtensionMethode = new SumOfFiveDigitNumber();
-           // sumOfFiveDigitNumber.Sumoffivedigits();
-            ExtensionMethode.Test();
+            // sumOfFiveDigitNumber.Sumoffivedigits();
+            //ExtensionMethode.Test();
+            ExtensionMethode.ReverseOfFiveDigitNumber();
         }
 
         private static void lines()

@@ -40,7 +40,8 @@ namespace LetUsC
             SumOfFiveDigitNumber ExtensionMethode = new SumOfFiveDigitNumber();
             //sumOfFiveDigitNumber.Sumoffivedigits();
             //ExtensionMethode.Test();
-            ExtensionMethode.ReverseOfFiveDigitNumber();
+            //2ExtensionMethode.ReverseOfFiveDigitNumber();
+            ExtensionMethode.SumOfFirstAndLastDigitNumbers();
         }
 
         private static void lines()

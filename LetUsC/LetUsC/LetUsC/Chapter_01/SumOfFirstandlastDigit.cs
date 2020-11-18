@@ -26,11 +26,13 @@ namespace LetUsC.Chapter_01
             else
             {
                 int lastDigit = inputnumber % 10;
-                while (inputnumber >= 10)
-                {
-                    inputnumber = inputnumber / 10;
-                }
-                int firstDigit = inputnumber;
+                int firstDigit = inputnumber / 1000;
+
+                //while (inputnumber >= 10)
+                //{
+                //    inputnumber = inputnumber / 10;
+                //}
+
 
                 Console.WriteLine($"Sum of first and last digit of Given number : {firstDigit + lastDigit}");
             }

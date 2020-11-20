@@ -41,7 +41,8 @@ namespace LetUsC
             //sumOfFiveDigitNumber.Sumoffivedigits();
             //ExtensionMethode.Test();
             //2ExtensionMethode.ReverseOfFiveDigitNumber();
-            ExtensionMethode.SumOfFirstAndLastDigitNumbers();
+            //ExtensionMethode.SumOfFirstAndLastDigitNumbers();
+            ExtensionMethode.TotalPopulationOfTheTown();
         }
 
         private static void lines()

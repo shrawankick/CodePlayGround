@@ -37,12 +37,13 @@ namespace LetUsC
             //rectangle_Circle.RectangleOrCircle();
             //Chapter_01.InterchangeTheContents interchangeTheContents = new InterchangeTheContents();
             //interchangeTheContents.InterchangeTheContentsOfTwoNumbers();
-            SumOfFiveDigitNumber ExtensionMethode = new SumOfFiveDigitNumber();
+            SumOfFiveDigitNumber ExtensionMethod = new SumOfFiveDigitNumber();
             //sumOfFiveDigitNumber.Sumoffivedigits();
-            //ExtensionMethode.Test();
-            //2ExtensionMethode.ReverseOfFiveDigitNumber();
-            //ExtensionMethode.SumOfFirstAndLastDigitNumbers();
-            ExtensionMethode.TotalPopulationOfTheTown();
+            //ExtensionMethod.Test();
+            //ExtensionMethod.ReverseOfFiveDigitNumber();
+            //ExtensionMethod.SumOfFirstAndLastDigitNumbers();
+            //ExtensionMethod.TotalPopulationOfTheTown();
+            ExtensionMethod.currencynotesofdenomination();
         }
 
         private static void lines()

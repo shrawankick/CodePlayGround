@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter_01\Class1.cs" />
+    <Compile Include="Chapter_01\CurrencyNotesOfDenominations.cs" />
     <Compile Include="Chapter_01\DistanceBetweenTwoCitiesInDiffrentFormats.cs" />
     <Compile Include="Chapter_01\FiveDigitsReverse.cs" />
     <Compile Include="Chapter_01\gross.cs" />

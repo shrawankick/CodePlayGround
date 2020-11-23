@@ -39,7 +39,7 @@ namespace LetUsC
             //interchangeTheContents.InterchangeTheContentsOfTwoNumbers();
             SumOfFiveDigitNumber ExtensionMethod = new SumOfFiveDigitNumber();
             //sumOfFiveDigitNumber.Sumoffivedigits();
-            //ExtensionMethod.Test();
+            ExtensionMethod.Test();
             //ExtensionMethod.ReverseOfFiveDigitNumber();
             //ExtensionMethod.SumOfFirstAndLastDigitNumbers();
             //ExtensionMethod.TotalPopulationOfTheTown();

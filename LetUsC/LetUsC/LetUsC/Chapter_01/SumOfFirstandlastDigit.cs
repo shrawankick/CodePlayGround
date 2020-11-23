@@ -14,11 +14,12 @@ namespace LetUsC.Chapter_01
         /// number.
         /// </summary>
         /// <param name="number"></param>
-        public static void SumOfFirstAndLastDigitNumbers(this Chapter_01.SumOfFiveDigitNumber number)
+        public static void SumOfFirstAndLastDigitNumbers(this Chapter_01.SumOfFiveDigitNumber className)
         {
             Console.WriteLine("Enter four digit Number");
             int inputnumber = Convert.ToInt32(Console.ReadLine());
-            int refinput = inputnumber;
+            var refinput = inputnumber.ToString();
+            var LengthofNumber = refinput.Length;
             if (inputnumber >= 10000)
             {
                 Console.WriteLine("please enter 4 digits only ");
@@ -26,7 +27,7 @@ namespace LetUsC.Chapter_01
             else
             {
                 int lastDigit = inputnumber % 10;
-                int firstDigit = inputnumber / 1000;
+                int firstDigit = inputnumber / 1000; //(LengthofNumber * 10);
 
                 //while (inputnumber >= 10)
                 //{

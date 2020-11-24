@@ -26,7 +26,8 @@ namespace LetUsC
         private static void Chapater2()
         {
             Chapter_02.ProfitAndLoss Chapter2 = new ProfitAndLoss();
-            Chapter2.ProfitAndLossMadebyUser();
+            //Chapter2.ProfitAndLossMadebyUser();
+            Chapter2.FindEvenAndOdNumber();
         }
 
         private static void Chapater1()

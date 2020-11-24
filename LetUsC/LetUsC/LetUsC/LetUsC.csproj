@@ -56,6 +56,7 @@
     <Compile Include="Chapter_01\Temperature_of_a_city.cs" />
     <Compile Include="Chapter_02\OddAndEvenNumber.cs" />
     <Compile Include="Chapter_02\ProfitAndLoss.cs" />
+    <Compile Include="Chapter_02\reversedfiveDigitNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

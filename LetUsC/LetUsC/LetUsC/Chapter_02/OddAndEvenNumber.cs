@@ -32,8 +32,8 @@ namespace LetUsC.Chapter_02
         {
             Console.WriteLine("Enter Year");
             int inputYear = Convert.ToInt32(Console.ReadLine());
-            bool leapYear = (inputYear % 4 == 0) ? true : false;
-            Console.WriteLine($"Given Year is a leap year ? {leapYear.ToString()}" );
+            string  leapYear = (inputYear % 4 == 0) ? "leap year":"not leap year";
+            Console.WriteLine($"Given Year is a {leapYear}" );
             
         }
     }

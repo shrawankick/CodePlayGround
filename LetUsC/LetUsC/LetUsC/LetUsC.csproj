@@ -57,6 +57,7 @@
     <Compile Include="Chapter_02\OddAndEvenNumber.cs" />
     <Compile Include="Chapter_02\ProfitAndLoss.cs" />
     <Compile Include="Chapter_02\reversedfiveDigitNumber.cs" />
+    <Compile Include="Chapter_02\youngestOfThree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

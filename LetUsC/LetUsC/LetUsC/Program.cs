@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LetUsC.Chapter_01;
+using LetUsC.Chapter_02;
 
 namespace LetUsC
 {
@@ -12,13 +13,20 @@ namespace LetUsC
         static void Main(string[] args)
         {
             lines();
-            Chapater1();
+            //Chapater1();
+            Chapater2();
 
             lines();
             Console.ReadKey();
 
 
 
+        }
+
+        private static void Chapater2()
+        {
+            Chapter_02.ProfitAndLoss Chapter2 = new ProfitAndLoss();
+            Chapter2.ProfitAndLossMadebyUser();
         }
 
         private static void Chapater1()

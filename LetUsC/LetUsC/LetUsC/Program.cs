@@ -32,7 +32,9 @@ namespace LetUsC
             //chapter2.ReverseOfFiveDigitNumberisSame();
             //chapter2.FindYongestOfthree();
             //chapter2.FindTheThreeAnglesOftriangel();
-            chapter2.FindtheAbsoluteValueofANumber();
+            //chapter2.FindtheAbsoluteValueofANumber();
+            chapter2.Areaoftherectangleisgreaterthanitsperimeter();
+
 
         }
 

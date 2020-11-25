@@ -20,8 +20,8 @@ namespace LetUsC.Chapter_02
             //Math.Abs(number);
             if (number < 0){
                 number = number * (-1);
-            }
-            Console.WriteLine($"absolute value of a number is {number}"); 
+            }      
+            Console.WriteLine($"absolute value of a number is {number}");           
         }
     }
 }

@@ -30,7 +30,8 @@ namespace LetUsC
             //Chapter2.FindEvenAndOdNumber();
             //chapter2.IsGivenYearisLeapyear();
             //chapter2.ReverseOfFiveDigitNumberisSame();
-            chapter2.FindYongestOfthree();
+            //chapter2.FindYongestOfthree();
+            chapter2.FindTheThreeAnglesOftriangel();
         }
 
         private static void Chapater1()

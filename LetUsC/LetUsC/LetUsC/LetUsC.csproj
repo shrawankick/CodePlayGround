@@ -54,6 +54,7 @@
     <Compile Include="Chapter_01\SumOfFirstandlastDigit.cs" />
     <Compile Include="Chapter_01\SumOfFiveDigitNumber.cs" />
     <Compile Include="Chapter_01\Temperature_of_a_city.cs" />
+    <Compile Include="Chapter_02\AbsoluteValue.cs" />
     <Compile Include="Chapter_02\OddAndEvenNumber.cs" />
     <Compile Include="Chapter_02\ProfitAndLoss.cs" />
     <Compile Include="Chapter_02\reversedfiveDigitNumber.cs" />

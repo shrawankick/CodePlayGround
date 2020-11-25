@@ -31,7 +31,9 @@ namespace LetUsC
             //chapter2.IsGivenYearisLeapyear();
             //chapter2.ReverseOfFiveDigitNumberisSame();
             //chapter2.FindYongestOfthree();
-            chapter2.FindTheThreeAnglesOftriangel();
+            //chapter2.FindTheThreeAnglesOftriangel();
+            chapter2.FindtheAbsoluteValueofANumber();
+
         }
 
         private static void Chapater1()

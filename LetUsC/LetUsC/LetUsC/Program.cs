@@ -34,7 +34,8 @@ namespace LetUsC
             //chapter2.FindTheThreeAnglesOftriangel();
             //chapter2.FindtheAbsoluteValueofANumber();
             //chapter2.Areaoftherectangleisgreaterthanitsperimeter();
-            chapter2.ThreePointsFallOnOneStraightLine();
+            //chapter2.ThreePointsFallOnOneStraightLine();
+            chapter2.CharactersASCIIValue();
 
         }
 

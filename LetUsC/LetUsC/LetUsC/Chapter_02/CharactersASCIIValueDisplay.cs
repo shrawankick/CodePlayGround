@@ -23,25 +23,47 @@ namespace LetUsC.Chapter_02
         {
             Console.WriteLine("Enter the characters");
             int  inputcharacterASCII = char.Parse(Console.ReadLine());
-            if (inputcharacterASCII >=65 || inputcharacterASCII >= 90)
+            if (65 <= inputcharacterASCII  && inputcharacterASCII <= 90)
             {
                 Console.WriteLine("it is a Upper Case letter");
             }
-            else if  (inputcharacterASCII >= 97 || inputcharacterASCII >= 122)
+            else if (97 <= inputcharacterASCII && inputcharacterASCII <= 122)
             {
                 Console.WriteLine("it is a lower Case letter");
             }
-            else if (inputcharacterASCII >= 48 || inputcharacterASCII >= 57)
+            else if (48 <= inputcharacterASCII && inputcharacterASCII <= 57)
             {
                 Console.WriteLine("it is a Number");
             }
-            else if (inputcharacterASCII >= 0 || inputcharacterASCII >= 47 && 
-                inputcharacterASCII >= 58 || inputcharacterASCII >= 64 &&
-                inputcharacterASCII >= 91 || inputcharacterASCII >= 96 &&
-                inputcharacterASCII >= 123 || inputcharacterASCII >= 127)
+            else if((0 <= inputcharacterASCII && inputcharacterASCII <= 47)| 
+                (58 <= inputcharacterASCII && inputcharacterASCII <= 64)|
+                (91 <= inputcharacterASCII && inputcharacterASCII <= 96)| 
+                (123 <= inputcharacterASCII && inputcharacterASCII <= 127))
             {
                 Console.WriteLine("it is a special symbol");
             }
+            
+
+            else
+            {
+                Console.WriteLine("it is not upper or lower case Or a number  ");
+            }
+
+            //else if  (inputcharacterASCII >= 97 && inputcharacterASCII >= 122)
+            //{
+            //    Console.WriteLine("it is a lower Case letter");
+            //}
+            //else if (inputcharacterASCII >= 48 && inputcharacterASCII >= 57)
+            //{
+            //    Console.WriteLine("it is a Number");
+            //}
+            //else  (inputcharacterASCII >= 0 && inputcharacterASCII >= 47 &&
+            //    inputcharacterASCII >= 58 && inputcharacterASCII >= 64 &&
+            //    inputcharacterASCII >= 91 && inputcharacterASCII >= 96 &&
+            //    inputcharacterASCII >= 123 && inputcharacterASCII >= 127)
+            //{
+            //    Console.WriteLine("it is a special symbol");
+            //}
 
 
         }

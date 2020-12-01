@@ -35,7 +35,8 @@ namespace LetUsC
             //chapter2.FindtheAbsoluteValueofANumber();
             //chapter2.Areaoftherectangleisgreaterthanitsperimeter();
             //chapter2.ThreePointsFallOnOneStraightLine();
-            chapter2.CharactersASCIIValue();
+            //chapter2.CharactersASCIIValue();
+            chapter2.rulesforinsurence();
 
         }
 

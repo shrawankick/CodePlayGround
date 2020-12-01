@@ -22,8 +22,8 @@ namespace LetUsC.Chapter_02
         public static void CharactersASCIIValue(this Chapter_02.ProfitAndLoss ClassName)
         {
             Console.WriteLine("Enter the characters");
-            int  inputcharacterASCII = char.Parse(Console.ReadLine());
-            if (65 <= inputcharacterASCII  && inputcharacterASCII <= 90)
+            int inputcharacterASCII = char.Parse(Console.ReadLine());
+            if (65 <= inputcharacterASCII && inputcharacterASCII <= 90)
             {
                 Console.WriteLine("it is a Upper Case letter");
             }
@@ -35,15 +35,13 @@ namespace LetUsC.Chapter_02
             {
                 Console.WriteLine("it is a Number");
             }
-            else if((0 <= inputcharacterASCII && inputcharacterASCII <= 47)| 
-                (58 <= inputcharacterASCII && inputcharacterASCII <= 64)|
-                (91 <= inputcharacterASCII && inputcharacterASCII <= 96)| 
+            else if ((0 <= inputcharacterASCII && inputcharacterASCII <= 47) |
+                (58 <= inputcharacterASCII && inputcharacterASCII <= 64) |
+                (91 <= inputcharacterASCII && inputcharacterASCII <= 96) |
                 (123 <= inputcharacterASCII && inputcharacterASCII <= 127))
             {
                 Console.WriteLine("it is a special symbol");
             }
-            
-
             else
             {
                 Console.WriteLine("it is not upper or lower case Or a number  ");

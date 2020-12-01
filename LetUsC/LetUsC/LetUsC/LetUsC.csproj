@@ -58,6 +58,7 @@
     <Compile Include="Chapter_02\AreaGreaterThanItsPerimeter.cs" />
     <Compile Include="Chapter_02\CharactersASCIIValueDisplay.cs" />
     <Compile Include="Chapter_02\Class1.cs" />
+    <Compile Include="Chapter_02\GradesOfSteel.cs" />
     <Compile Include="Chapter_02\InsuranceCompany.cs" />
     <Compile Include="Chapter_02\OddAndEvenNumber.cs" />
     <Compile Include="Chapter_02\ProfitAndLoss.cs" />

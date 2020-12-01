@@ -36,7 +36,8 @@ namespace LetUsC
             //chapter2.Areaoftherectangleisgreaterthanitsperimeter();
             //chapter2.ThreePointsFallOnOneStraightLine();
             //chapter2.CharactersASCIIValue();
-            chapter2.rulesforinsurence();
+            //chapter2.rulesforinsurence();
+            chapter2.FindTheGradeOfSteel();
 
         }
 

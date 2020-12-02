@@ -65,6 +65,7 @@
     <Compile Include="Chapter_02\ProfitAndLoss.cs" />
     <Compile Include="Chapter_02\reversedfiveDigitNumber.cs" />
     <Compile Include="Chapter_02\ThreeAnglesOfTriangle.cs" />
+    <Compile Include="Chapter_02\ValidTriangle.cs" />
     <Compile Include="Chapter_02\youngestOfThree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

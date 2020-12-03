@@ -39,8 +39,8 @@ namespace LetUsC
             //chapter2.rulesforinsurence();
             //chapter2.FindTheGradeOfSteel();
             //chapter2.LateReturnChargeofBook();
-            chapter2.FindifTriangleIsvalid();
-
+            //chapter2.FindifTriangleIsvalid();
+            chapter2.TriangleBasedonAngles();
         }
 
         private static void Chapater1()

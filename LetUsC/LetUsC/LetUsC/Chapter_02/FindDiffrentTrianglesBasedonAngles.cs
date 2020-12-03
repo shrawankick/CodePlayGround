@@ -24,7 +24,7 @@ namespace LetUsC.Chapter_02
                 if (angleA == angleB && angleA == angleC && angleB == angleC){
                     Console.WriteLine("its a equilateral");
                 }
-                else if (angleA == 90 || angleB == 90 || angleC == 90){
+                else if(angleA == 90 || angleB == 90 || angleC == 90){
                     Console.WriteLine("its a Right angle Triangle ");
                 }
                 else if (angleA != angleB && angleA!= angleC && angleB != angleC){
@@ -33,6 +33,10 @@ namespace LetUsC.Chapter_02
                 if (angleA == angleB || angleA == angleC || angleB == angleC){
                     Console.WriteLine("its a isosceles");
                 }
+            }
+            else
+            {
+                Console.WriteLine("its not a Triangle");
             }
 
         } 

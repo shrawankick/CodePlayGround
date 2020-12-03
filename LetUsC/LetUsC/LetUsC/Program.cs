@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using LetUsC.Chapter_01;
 using LetUsC.Chapter_02;
+using LetUsC.Chapter_03;
+
 
 namespace LetUsC
 {
@@ -14,13 +16,21 @@ namespace LetUsC
         {
             lines();
             //Chapater1();
-            Chapater2();
+            //Chapater2();
+            Chapater3();
+
 
             lines();
             Console.ReadKey();
 
 
 
+        }
+
+        private static void Chapater3()
+        {
+            Chapter_03.FactorialValue chapter3 = new FactorialValue();
+            chapter3.FindTheFactorialvalue();
         }
 
         private static void Chapater2()

@@ -16,7 +16,7 @@ namespace LetUsC.Chapter_02
         {
             Console.WriteLine("Enter the Time taken by the worker");
             int timeTakenByworker = Convert.ToInt32(Console.ReadLine());
-            if(timeTakenByworker<= 5)
+            if (timeTakenByworker <= 5)
             {
                 if (timeTakenByworker <= 3)
                 {
@@ -25,19 +25,13 @@ namespace LetUsC.Chapter_02
                         Console.WriteLine("worker is highly efficient");
                     }
                     else
-                    {
                         Console.WriteLine("the worker is ordered to improve speed");
-                    }
                 }
                 else
-                {
                     Console.WriteLine("the worker is given training to improve his speed");
-                }
             }
             else
-            {
                 Console.WriteLine("Worker Can Leave The company");
-            }
         }
     }
 }

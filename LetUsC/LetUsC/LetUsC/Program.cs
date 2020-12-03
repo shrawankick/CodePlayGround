@@ -40,7 +40,8 @@ namespace LetUsC
             //chapter2.FindTheGradeOfSteel();
             //chapter2.LateReturnChargeofBook();
             //chapter2.FindifTriangleIsvalid();
-            chapter2.TriangleBasedonAngles();
+            //chapter2.TriangleBasedonAngles();
+            chapter2.FindWorkerEfficiency();
         }
 
         private static void Chapater1()

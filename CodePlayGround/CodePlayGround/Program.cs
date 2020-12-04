@@ -28,15 +28,27 @@ namespace CodePlayGround
             //  practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
             //  primeNumber.VerifythenumberisPrime();
 
-            LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
-            largestandSmallestofArray.LargestAndSmallestofArray();
-           
+            //LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
+            //largestandSmallestofArray.LargestAndSmallestofArray();
+            CipherText('X',100);
+
+
+
 
 
             Console.ReadLine();
         }
 
-       
+        private static void CipherText(char character, int Shift)
+        {
+            if (character >= 'A' && character <= 'Z')
+            {
+                char ch = (char)(((int)character + Shift - 65) % 26 + 65);
+                Console.WriteLine(ch);
+            }
+            else
+            Console.WriteLine("Enter Valid Char");
+        }
 
         private static void FindtheNthlargestNumberinArrayUsingStacks()
         {

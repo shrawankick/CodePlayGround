@@ -69,8 +69,10 @@
     <Compile Include="Chapter_02\ValidTriangle.cs" />
     <Compile Include="Chapter_02\workerefficiency.cs" />
     <Compile Include="Chapter_02\youngestOfThree.cs" />
+    <Compile Include="Chapter_03\Class1.cs" />
     <Compile Include="Chapter_03\FactorialValue.cs" />
     <Compile Include="Chapter_03\NumberRaisedToThePower.cs" />
+    <Compile Include="Chapter_03\PrintAllTheASCIIValues.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

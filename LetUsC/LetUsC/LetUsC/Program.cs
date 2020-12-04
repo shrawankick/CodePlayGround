@@ -30,7 +30,8 @@ namespace LetUsC
         private static void Chapater3()
         {
             Chapter_03.FactorialValue chapter3 = new FactorialValue();
-            chapter3.FindTheFactorialvalue();
+            //chapter3.FindTheFactorialvalue();
+            chapter3.TheNumberRaisedToThePower();
         }
 
         private static void Chapater2()

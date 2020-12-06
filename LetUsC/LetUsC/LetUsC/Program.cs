@@ -32,7 +32,8 @@ namespace LetUsC
             Chapter_03.FactorialValue chapter3 = new FactorialValue();
             //chapter3.FindTheFactorialvalue();
             //chapter3.TheNumberRaisedToThePower();
-            chapter3.PrintAllASCIIValues();
+            //chapter3.PrintAllASCIIValues();
+            chapter3.FindArmstrongNumbers();
         }
 
         private static void Chapater2()

@@ -24,18 +24,11 @@ namespace CodePlayGround
             //FindtheNthlargestNumberinArrayUsingStacks();
             //OperationsOnStack operationsOnStack = new OperationsOnStack();
             //operationsOnStack.OperationsOnStacks();
-
             //  practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
             //  primeNumber.VerifythenumberisPrime();
-
             //LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
             //largestandSmallestofArray.LargestAndSmallestofArray();
             CipherText('X',100);
-
-
-
-
-
             Console.ReadLine();
         }
 
@@ -91,8 +84,6 @@ namespace CodePlayGround
                 Console.WriteLine("The " + n + " largest number in array is " + myarray[myarray.Length - n]);
 
             }
-
-
 
         }
         /// <summary>

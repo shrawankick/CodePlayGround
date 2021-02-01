@@ -30,13 +30,48 @@ namespace CodePlayGround
 
             //LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
             //largestandSmallestofArray.LargestAndSmallestofArray();
-            CipherText('X',100);
+            // CipherText('X',100);
+            FindTheDuplicatesAndItsOccurrence("Mississippi");
 
 
 
 
 
             Console.ReadLine();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="inputString"> input String for example 
+        /// "Aassekoopannessyttoodde","Mississippi","raccoonnookkeeper"</param>
+        private static void FindTheDuplicatesAnditsOccurencce(string inputString)
+        {
+            // we used Dictionary to make this collection generic  
+            Dictionary<Char, int> CharCount = new Dictionary<char, int>();
+
+            foreach (Char eachLetter in inputString)
+            {
+                if (eachLetter != ' ')
+                {
+                    if (!CharCount.ContainsKey(eachLetter))
+                    {
+                        CharCount.Add(eachLetter, 1);
+                    }
+                    else
+                    {
+                        CharCount[eachLetter]++;
+                    }
+                }
+            }
+            
+            foreach (var item in CharCount)
+            {
+                if (item.Value > 1)
+                {
+                    Console.WriteLine(item.Key + "," + item.Value);
+                }
+                
+            }
         }
 
         private static void CipherText(char character, int Shift)
@@ -131,7 +166,6 @@ namespace CodePlayGround
             s.Push(x);
 
         }
-
         public static void sortStack(Stack<int> tmpStack)
         {
             if (tmpStack.Count > 0)
@@ -143,8 +177,7 @@ namespace CodePlayGround
                 sortedInsert(tmpStack, x);
             }
             // throw new NotImplementedException();
-        }
-
+        }   
         public static void sortedInsert(Stack<int> tmpStack, int x)
         {
             if (tmpStack.Count == 0 || x > (int)tmpStack.Peek())
@@ -154,7 +187,6 @@ namespace CodePlayGround
             }
             //throw new NotImplementedException();
         }
-
         private static void FindtheNthlargestNumberinArray()
         {
             int n = 5;
@@ -202,8 +234,6 @@ namespace CodePlayGround
             }
 
         }
-
-
         /// <summary>
         /// Printing the Array for reference 
         /// </summary>
@@ -217,7 +247,6 @@ namespace CodePlayGround
             }
             Console.WriteLine("\n");
         }
-
         private static void FindtheNthlargestNumberinArrayUsingBuiltinfun()
         {
             int n = 4;
@@ -245,7 +274,6 @@ namespace CodePlayGround
                 // throw new NotImplementedException();
             }
         }
-
         private static void TestingTryCatch()
         {
             try
@@ -264,7 +292,6 @@ namespace CodePlayGround
             }
             throw new NotImplementedException();
         }
-
         private static void VerifythenumberisPrime()
         {
 
@@ -285,7 +312,6 @@ namespace CodePlayGround
             }
             //throw new NotImplementedException();
         }
-
         private static void CountTheOccurenceOfEachChar(string inputword)
         {
 
@@ -315,7 +341,6 @@ namespace CodePlayGround
             }
             // throw new NotImplementedException();
         }
-
         private static void StringResverse()
         {
 
@@ -332,7 +357,6 @@ namespace CodePlayGround
 
 
         }
-
         /// <summary>
         /// 
         /// </summary>
@@ -358,7 +382,6 @@ namespace CodePlayGround
             Console.WriteLine(secondBiggest);
             Console.ReadLine();
         }
-
         private static void PossibleSubstring(string str)
         {
             // string str = "sravan";
@@ -378,7 +401,6 @@ namespace CodePlayGround
             Console.ReadLine();
 
         }
-
         private static void DuplicateCharacters(string str)
         {
             // = "aabbcddww";

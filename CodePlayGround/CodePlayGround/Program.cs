@@ -40,11 +40,11 @@ namespace CodePlayGround
             Console.ReadLine();
         }
         /// <summary>
-        /// 
+        /// Find The Duplicates And Its Occurrence
         /// </summary>
         /// <param name="inputString"> input String for example 
         /// "Aassekoopannessyttoodde","Mississippi","raccoonnookkeeper"</param>
-        private static void FindTheDuplicatesAnditsOccurencce(string inputString)
+        private static void FindTheDuplicatesAndItsOccurrence(string inputString)
         {
             // we used Dictionary to make this collection generic  
             Dictionary<Char, int> CharCount = new Dictionary<char, int>();

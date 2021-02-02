@@ -33,7 +33,8 @@ namespace LetUsC
             //chapter3.FindTheFactorialvalue();
             //chapter3.TheNumberRaisedToThePower();
             //chapter3.PrintAllASCIIValues();
-            chapter3.FindArmstrongNumbers();
+            //chapter3.FindArmstrongNumbers();
+            chapter3.CountofPositiveNegativeAndZeros();
         }
 
         private static void Chapater2()

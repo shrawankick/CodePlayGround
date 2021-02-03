@@ -34,7 +34,8 @@ namespace LetUsC
             //chapter3.TheNumberRaisedToThePower();
             //chapter3.PrintAllASCIIValues();
             //chapter3.FindArmstrongNumbers();
-            chapter3.CountofPositiveNegativeAndZeros();
+            //chapter3.CountofPositiveNegativeAndZeros();
+            chapter3.ConvertNumberToOctal();
         }
 
         private static void Chapater2()

@@ -76,6 +76,7 @@
     <Compile Include="Chapter_03\NumberRaisedToThePower.cs" />
     <Compile Include="Chapter_03\NumberToOctal.cs" />
     <Compile Include="Chapter_03\PrintAllTheASCIIValues.cs" />
+    <Compile Include="Chapter_03\PrintPrimeNumbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

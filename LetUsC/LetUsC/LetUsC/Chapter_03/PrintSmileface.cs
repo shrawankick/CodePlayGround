@@ -10,9 +10,12 @@ namespace LetUsC.Chapter_03
     {
         public static void PrintSmilefaceinScreen(this Chapter_03.FactorialValue classname)
         {
-            for (int i = 0; i < 2559; i++)
+            int i;
+            char ch = Convert.ToChar(1); //ASCII value for smiling face is 1
+
+            for (i = 0; i < 2000; i++)
             {
-                Console.WriteLine("☺☺");
+                Console.WriteLine(ch + "\n");
             }
         }
             

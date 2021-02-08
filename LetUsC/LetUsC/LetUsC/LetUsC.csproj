@@ -79,6 +79,7 @@
     <Compile Include="Chapter_03\PrintAllTheASCIIValues.cs" />
     <Compile Include="Chapter_03\PrintPrimeNumbers.cs" />
     <Compile Include="Chapter_03\PrintSmileface.cs" />
+    <Compile Include="Chapter_03\PrintTheSumOfSeries.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

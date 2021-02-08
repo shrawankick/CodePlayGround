@@ -36,8 +36,9 @@ namespace LetUsC
             //chapter3.FindArmstrongNumbers();
             //chapter3.CountofPositiveNegativeAndZeros();
             //chapter3.ConvertNumberToOctal();
-           // chapter3.PrintPrimeNumbersTill();
-            chapter3.PrintSmilefaceinScreen();
+           //chapter3.PrintPrimeNumbersTill();
+            //chapter3.PrintSmilefaceinScreen();
+            chapter3.GenerateAllCombinationsofNumbers();
         }
 
         private static void Chapater2()

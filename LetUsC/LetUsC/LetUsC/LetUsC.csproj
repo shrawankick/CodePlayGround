@@ -73,6 +73,7 @@
     <Compile Include="Chapter_03\Class1.cs" />
     <Compile Include="Chapter_03\CountofPositiveNegativeAndZerosEntered.cs" />
     <Compile Include="Chapter_03\FactorialValue.cs" />
+    <Compile Include="Chapter_03\generateAllCombinations.cs" />
     <Compile Include="Chapter_03\NumberRaisedToThePower.cs" />
     <Compile Include="Chapter_03\NumberToOctal.cs" />
     <Compile Include="Chapter_03\PrintAllTheASCIIValues.cs" />

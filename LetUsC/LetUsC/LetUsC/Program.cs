@@ -39,7 +39,8 @@ namespace LetUsC
             //chapter3.PrintPrimeNumbersTill();
             //chapter3.PrintSmilefaceinScreen();
             // chapter3.GenerateAllCombinationsofNumbers();
-            chapter3.TheSumOfSeries();
+            //chapter3.TheSumOfSeries();
+            chapter3.PatternPrint();
         }
 
         private static void Chapater2()

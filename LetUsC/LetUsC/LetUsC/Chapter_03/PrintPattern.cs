@@ -12,25 +12,15 @@ namespace LetUsC.Chapter_03
         {
             for (int i = 0; i <= 6; i++)
             {
-                for (int j = 65; j <= 71-i; j++)
+                for (int j = 65; j < 71-i; j++)
                 {
-                   
-                    Console.WriteLine(Convert.ToChar(j));
+                    //String.Format(Convert.ToChar(j).ToString());
+                   // Console.WriteLine(String.Format(Convert.ToChar(j).ToString()));
+                    StringBuilder builder = new StringBuilder();
+                    Console.WriteLine(builder.Append(String.Format(Convert.ToChar(j).ToString())));
+
                 }
-                for (int space = 0; space <= i * 2 - 1; space++)
-                {
-                    Console.WriteLine( " ");
-                }
-                for (int k = 71 - i; k >= 65; k--)
-                {
-                    if (k != 71)
-                    {
-                        Console.WriteLine(Convert.ToChar(k));
-                    }
-                    else
-                    { }
-                }
-                Console.WriteLine("\n");
+                Console.WriteLine(" ");
             }
 
            

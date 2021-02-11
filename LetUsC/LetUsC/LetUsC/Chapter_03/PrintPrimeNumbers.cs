@@ -10,11 +10,9 @@ namespace LetUsC.Chapter_03
     {
         public static void PrintPrimeNumbersTill(this Chapter_03.FactorialValue classname)
         {
-            for (int ji = 0; ji < 301; ji++)
+            for (int PrimeNumber = 0; PrimeNumber < 301; PrimeNumber++)
             {
-
-
-                int input = ji;
+                int input = PrimeNumber;
                 bool isPrime = true;
                 for (int i = 2; i < input / 2; i++)
                 {

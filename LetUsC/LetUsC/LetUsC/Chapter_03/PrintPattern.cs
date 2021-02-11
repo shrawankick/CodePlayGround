@@ -12,15 +12,16 @@ namespace LetUsC.Chapter_03
         {
             for (int i = 0; i <= 6; i++)
             {
-                for (int j = 65; j < 71-i; j++)
+                for (int j = i; j < 10-i; j++)
                 {
                     //String.Format(Convert.ToChar(j).ToString());
-                   // Console.WriteLine(String.Format(Convert.ToChar(j).ToString()));
-                    StringBuilder builder = new StringBuilder();
-                    Console.WriteLine(builder.Append(String.Format(Convert.ToChar(j).ToString())));
-
+                    // Console.WriteLine(String.Format(Convert.ToChar(j).ToString()));
+                    //StringBuilder builder = new StringBuilder();
+                    // Console.WriteLine(builder.Append(String.Format(Convert.ToChar(j).ToString())));
+                    
+                    Console.WriteLine(" ");
                 }
-                Console.WriteLine(" ");
+                Console.WriteLine("#");
             }
 
            

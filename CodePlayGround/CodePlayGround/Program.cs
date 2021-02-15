@@ -14,7 +14,7 @@ namespace CodePlayGround
             //DuplicateCharacters("zaabbcddww");
             //PossibleSubstring("abcdef");
             //SecondBiggestElementInArray();
-            StringResverse();
+            //StringResverse();
             //CountTheOccurenceOfEachChar("Mississippi");
             //CountTheOccurenceOfEachChar(string.Empty);
             //VerifythenumberisPrime();
@@ -32,6 +32,7 @@ namespace CodePlayGround
             //largestandSmallestofArray.LargestAndSmallestofArray();
             // CipherText('X',100);
             //FindTheDuplicatesAndItsOccurrence("Mississippi");
+            SortAnArray();
 
 
 
@@ -39,6 +40,30 @@ namespace CodePlayGround
 
             Console.ReadLine();
         }
+
+        private static void SortAnArray()
+        {
+            int[] inputArray = new int[] { -11, 3, 4, 2, 6, 5, 8, 7, 10 };
+            int Temp = 0;
+            for (int i = 0; i < inputArray.Length-1; i++)
+            {
+                for (int j = i+1; j < inputArray.Length; j++)
+                {
+                    if (inputArray[i] > inputArray[j])
+                    {
+                        Temp = inputArray[i];
+                        inputArray[i] = inputArray[j];
+                        inputArray[j] = Temp;
+                    }
+                }
+            }
+            foreach (var item in inputArray)
+            {
+                Console.WriteLine(item);
+            }
+            
+        }
+
         /// <summary>
         /// Find The Duplicates And Its Occurrence
         /// </summary>

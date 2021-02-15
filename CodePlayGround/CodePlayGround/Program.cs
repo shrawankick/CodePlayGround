@@ -14,7 +14,7 @@ namespace CodePlayGround
             //DuplicateCharacters("zaabbcddww");
             //PossibleSubstring("abcdef");
             //SecondBiggestElementInArray();
-            //StringResverse();
+            StringResverse();
             //CountTheOccurenceOfEachChar("Mississippi");
             //CountTheOccurenceOfEachChar(string.Empty);
             //VerifythenumberisPrime();
@@ -31,7 +31,7 @@ namespace CodePlayGround
             //LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
             //largestandSmallestofArray.LargestAndSmallestofArray();
             // CipherText('X',100);
-            FindTheDuplicatesAndItsOccurrence("Mississippi");
+            //FindTheDuplicatesAndItsOccurrence("Mississippi");
 
 
 
@@ -344,15 +344,14 @@ namespace CodePlayGround
         private static void StringResverse()
         {
 
-            string str, str1 = "";
-            int i, l;
-            str = "sravan";
-            l = str.Length - 1;
-            for (i = l; i >= 0; i--)
+            string ResverseString = "";
+            string inputString  = "sravan";
+            int l = inputString.Length - 1;
+            for (int i = l; i >= 0; i--)
             {
-                str1 = str1 + str[i];
+                ResverseString = ResverseString + inputString[i];
             }
-            Console.WriteLine(str1);
+            Console.WriteLine(ResverseString);
 
 
 

@@ -20,25 +20,39 @@ namespace CodePlayGround
             //VerifythenumberisPrime();
             //TestingTryCatch();
             //FindtheNthlargestNumberinArrayUsingBuiltinfun();
-            // FindtheNthlargestNumberinArray();
+            //FindtheNthlargestNumberinArray();
             //FindtheNthlargestNumberinArrayUsingStacks();
             //OperationsOnStack operationsOnStack = new OperationsOnStack();
             //operationsOnStack.OperationsOnStacks();
-
-            //  practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
-            //  primeNumber.VerifythenumberisPrime();
-
+            //practicePrograms.PrimeNumber primeNumber = new practicePrograms.PrimeNumber();
+            //primeNumber.VerifythenumberisPrime();     
             //LargestandSmallestofArray largestandSmallestofArray = new LargestandSmallestofArray();
             //largestandSmallestofArray.LargestAndSmallestofArray();
-            // CipherText('X',100);
+            //CipherText('X',100);
             //FindTheDuplicatesAndItsOccurrence("Mississippi");
-            SortAnArray();
+            //SortAnArray();
+            PrintSubString();
 
 
 
 
 
             Console.ReadLine();
+        }
+
+        private static void PrintSubString()
+        {
+            string inputString = "abcd";
+            for (int i = 1; i < inputString.Length; i++)
+            {
+                for (int j = 0; j <= inputString.Length - i; j++)
+                {
+                    string PossibleSubstring = inputString.Substring(j, i);
+                    Console.WriteLine(PossibleSubstring);
+                    
+                }
+            }
+
         }
 
         private static void SortAnArray()
